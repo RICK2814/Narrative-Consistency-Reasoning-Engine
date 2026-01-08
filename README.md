@@ -245,10 +245,3 @@ MIT LICENSE
 
 ---
 
-If you want, next I can:
-
-* tailor this README **exactly to your team name**
-* add a **“Methodology” section copied into your report**
-* simplify language for **non-technical judges**
-
-Just tell me 👍
