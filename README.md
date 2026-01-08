@@ -30,24 +30,23 @@ Built a complete Python implementation of the Narrative Consistency Reasoning En
 
 GitHub Repository
 
-Project Structure
-rapid-corona/
-├── README.md
-├── requirements.txt
-├── src/
-│   ├── models.py       # Pydantic data models
-│   ├── interfaces.py   # LLM abstraction + MockLLM
-│   ├── gemini_llm.py   # Google Gemini integration
-│   ├── pipeline.py     # Main orchestration
-│   ├── main.py         # CLI entry point
-│   └── stages/
-│       ├── decomposition.py  # Stage 1
-│       ├── retrieval.py      # Stage 2
-│       ├── analysis.py       # Stage 3
-│       └── aggregation.py    # Stage 4
-└── tests/
-    ├── test_pipeline.py
-    └── test_stages.py
+src/
+├── models.py            # data models for narrative/backstory/results
+├── interfaces.py        # LLM adapter abstraction (including a mock LLM)
+├── gemini_llm.py        # real LLM integration (Google Gemini)
+├── pipeline.py          # main reasoning engine core
+├── main.py              # CLI to run the tool
+└── stages/
+    ├── decomposition.py # stage 1
+    ├── retrieval.py     # stage 2
+    ├── analysis.py      # stage 3
+    └── aggregation.py   # stage 4
+tests/
+├── test_pipeline.py
+└── test_stages.py
+README.md
+requirements.txt
+
 Pipeline Stages
 Stage	Module	Purpose
 1	
